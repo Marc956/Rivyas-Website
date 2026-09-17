@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b2a5b">
+<link rel="icon" href="assets/rivyas-logo.png">
+<link rel="stylesheet" href="styles.css">
+
+<title>Request a Uniform Quote | Rivyas</title>
+<meta name="description" content="Tell Rivyas about your uniform requirement and request a customised quotation.">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/rivyas-logo.png" alt="Rivyas - Reliable Uniform Solutions">
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="school-uniforms.html">Schools</a>
+      <a href="corporate-uniforms.html">Corporate</a>
+      <a href="workwear.html">Workwear</a>
+      <a href="healthcare.html">Healthcare</a>
+      <a href="hospitality.html">Hospitality</a>
+      <a href="custom-uniforms.html">Custom</a>
+      <a href="insights.html">Insights</a>
+      <a class="nav-cta" href="contact.html">Request a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero"><div class="container"><span class="eyebrow">CONTACT RIVYAS</span><h1>Tell Us What You Need.</h1><p>Send the basics and we’ll take the conversation forward.</p></div></section>
+<section class="section"><div class="container contact-grid">
+<form class="rfq" action="https://formsubmit.co/heena.sharma84@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Rivyas Website Enquiry">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://marc956.github.io/Rivyas-Website/thank-you.html">
+<label>Name / Organisation<input required name="name" placeholder="Your name or organisation"></label>
+<label>Phone / WhatsApp<input required name="phone" placeholder="+91"></label>
+<label>Email<input type="email" name="email" placeholder="you@example.com"></label>
+<label>Sector<select name="sector"><option>School / Education</option><option>Corporate</option><option>Factory / Workwear</option><option>Healthcare</option><option>Hospitality</option><option>Custom Team</option></select></label>
+<label>Approx. number of people<input name="quantity" placeholder="e.g. 100"></label>
+<label>Uniforms required<input name="uniforms" placeholder="Shirts, trousers, scrubs, etc."></label>
+<label>Delivery location<input name="location" placeholder="City / State"></label>
+<label>Required-by date<input type="date" name="date"></label>
+<label class="full">Message / special requirements<textarea name="message" rows="6" placeholder="Tell us about your requirement..."></textarea></label>
+<button class="btn primary full" type="submit">Request My Quote</button>
+</form>
+<div class="contact-card"><img src="assets/rivyas-logo.png" alt="Rivyas"><h2>Let’s talk uniforms.</h2><p><strong>Phone:</strong><br><a href="tel:+919873409171">+91 9873409171</a></p><p><strong>Email:</strong><br><a href="mailto:heena.sharma84@gmail.com">heena.sharma84@gmail.com</a></p><p><strong>Location:</strong><br>Gurgaon, Haryana</p><a class="btn secondary" href="https://wa.me/919873409171?text=Hi%20Rivyas%2C%20I%20am%20looking%20for%20uniform%20solutions.%20Please%20help%20me%20with%20my%20requirement." target="_blank" rel="noopener">WhatsApp Rivyas</a></div>
+</div></section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img class="footer-logo" src="assets/rivyas-logo.png" alt="Rivyas">
+      <p>Reliable Uniform Solutions.</p>
+      <p class="muted">More than Uniforms. A Better Tomorrow.</p>
+    </div>
+    <div>
+      <h3>Solutions</h3>
+      <a href="school-uniforms.html">Schools</a>
+      <a href="corporate-uniforms.html">Corporate</a>
+      <a href="workwear.html">Workwear</a>
+      <a href="healthcare.html">Healthcare</a>
+      <a href="hospitality.html">Hospitality</a>
+      <a href="custom-uniforms.html">Custom Uniforms</a>
+    </div>
+    <div>
+      <h3>Connect</h3>
+      <p><strong>Phone:</strong> <a href="tel:+919873409171">+91 9873409171</a></p>
+      <p><strong>Email:</strong> <a href="mailto:heena.sharma84@gmail.com">heena.sharma84@gmail.com</a></p>
+      <p>Gurgaon, Haryana</p>
+      <a class="whatsapp" href="https://wa.me/919873409171?text=Hi%20Rivyas%2C%20I%20am%20looking%20for%20uniform%20solutions.%20Please%20help%20me%20with%20my%20requirement." target="_blank" rel="noopener">WhatsApp Rivyas</a>
+    </div>
+  </div>
+  <div class="container copyright">© <span id="year"></span> Rivyas. All rights reserved.</div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+  if (toggle) toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+});
+</script>
+
+</body>
+</html>
